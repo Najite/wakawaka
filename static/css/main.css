@@ -1,0 +1,614 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+header{
+    top: 0px;
+    position: relative;
+    width: 100%;
+}
+
+
+
+header .top-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.top-nav nav ul li{
+    margin: 0rem 1rem;
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.top-nav nav{
+    grid-column-start: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.choice-selection nav ul li{
+    display: inline-block;
+    margin: 0rem 1rem;
+    font-size: 2rem;
+}
+
+.choice-selection{
+    margin-top: 4rem;
+    margin-left: 6rem;
+}
+
+.banner-image{
+    background: url(../media/burano-the-most-colorful-island-of-italy-5.jpeg);
+    width: 100%;
+    height: 34rem;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    overflow: hidden;
+    position: relative;
+    
+
+}
+
+.banner-title{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    font-size: 3rem;
+}
+
+
+.form-section{
+    background-color: red;
+    grid-row-start: 4;
+    grid-row-end: 11;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    color: #ffff;
+    display: grid;       
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    padding-right: 1rem;
+    padding-left: 2rem;
+    
+}
+
+.one-way-radio{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    align-self: end;
+    justify-self: start;
+    padding-left: 2rem;
+}
+
+.multi-city-radio, .return-radio{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 5;
+    align-self: end;
+    justify-self: start;
+}
+
+.multi-city-radio{
+    padding-left: 9rem ;
+}
+
+.return-radio{
+    padding-left: 16rem;
+}
+
+.label-for-to-destination{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    align-self: end;
+    justify-self: center;
+    margin-left: -14rem;
+
+}
+
+.destination{
+    grid-row-start:3;
+}
+
+/* styling the input */
+
+.destination input[type='text']{
+    width: 15rem;
+    height: 3rem;
+}
+
+.destination input[type='date']{
+    width: 10rem;
+    height: 3rem;
+}
+
+#date-destination{
+    margin-left: -1.6rem;
+}
+
+
+.label-for-from-destination{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    align-self: end;
+    justify-self: start;
+}
+
+.label-for-return-date{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    align-self: end;
+    justify-self: start;
+}
+
+.label-for-depart-destination{
+    grid-row-start: 2;
+    grid-column-start: 4;
+    align-self: end;
+    justify-self: start;
+}
+
+
+.label-for-class-category{
+    grid-row-start: 2;
+    grid-column-start: 5;
+    align-self: end;
+    justify-self: start;   
+}
+
+
+.checkbox-direct-flight{
+    grid-row-start: 4;
+    align-self: end;
+}
+
+.checkbox-two-way-flight{
+    grid-row-start: 5;
+}
+
+.checkbox-return-flight{
+    grid-row-start: 4;
+    align-self: end;
+}
+
+.form-section button{
+    grid-row-start: 4;
+    grid-column-start: 5;
+    font-size: 1.5rem;
+}
+
+/* section divider */
+
+.triangle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 2;
+}
+
+.triangle svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+}
+
+.triangle .shape-fill{
+    fill: #ffff;
+}
+
+.my-container{
+    margin-top: 3rem;
+    padding: 2rem 6rem;
+    overflow: hidden;
+
+}
+
+
+
+/* styling travel area */
+
+.announcment{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.announcment a{
+    justify-self: end;
+}
+
+.travel-card-wrapper{
+    margin-top: 4rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.travel-card img{
+    width: 100%;
+    height: 60%;
+}
+
+.travel-card-title{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.travel-card-title h2{
+    justify-self: center;
+}
+
+
+
+.travel-card{
+    background-color: orange;   
+    height: 33rem;
+    margin: 0.3rem;
+    width: 23.5rem;
+}
+
+.travel-card-body{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.travel-card-body img{
+    border-radius: 100%;
+    width: 5rem;
+    height: 4rem;
+}
+
+.travel-card-text{
+    padding: 0rem 3rem;
+}
+
+
+.hotel-booking{
+    margin-top: 10rem;
+}
+
+.hotel-booking nav{
+    margin-top: 4rem;
+    
+}
+
+.hotel-booking nav li{
+    display: inline-block;
+    margin: 0rem 2rem;
+    list-style: none;
+}
+
+
+.travel-cartoon{
+    background-color: orange;
+    height: 30rem;
+    margin-top: 10rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.travel-cartoon .travel-card-wrapper{
+    height: 30rem;
+    margin-top: -3rem;
+    overflow: hidden;
+}
+
+.travel-cartoon h2, .travel-cartoon p{
+    font-size: 1.3rem;
+
+}
+
+
+
+.travel-cartoon .travel-card-body{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+
+
+
+/* everything mobile responsive */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .choice-selection nav ul{
+       display: flex;
+       margin-left: -6rem;
+       margin-top: -2rem;
+    }
+
+    .choice-selection nav ul li{
+        font-size: 1rem;
+    }
+
+    .banner-title h1{
+        font-size: 2rem;
+    }
+
+    .form-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+        overflow: scroll;
+        height: 50rem;
+    }
+
+    .multi-city-radio, .return-radio {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        margin-left: -7rem;
+        align-self: start;
+        justify-self: start;
+    }
+
+    .label-for-from-destination {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        align-self: end;
+        justify-self: start;
+        
+    }
+
+    #destination-from{
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+
+    .destination input[type='text']{
+        width: 11rem;
+    }
+
+    .label-for-return-date {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        align-self: end;
+        justify-self: start;
+    }
+
+    #date-destination{
+        grid-row-start: 5;
+        grid-column-start: 1;
+        margin-left: 0rem;
+    }
+
+    .label-for-depart-destination {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        align-self: end;
+        justify-self: start;
+    }
+
+    .label-for-class-category {
+        grid-row-start: 6;
+        grid-column-start: 1;
+
+    }
+
+    .label-for-to-destination{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        margin-left: -10rem;
+    }
+
+    #destination-to{
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+
+    #return-destination{
+        grid-row-start: 6;
+        grid-column-start: 1;
+    }
+
+    #class-destination{
+        grid-row-start: 7;
+        grid-column-start: 1;
+    }
+
+    .banner-image{
+        height: 70rem;
+    }
+
+    /* styling checkbox */
+    .checkbox-direct-flight{
+        grid-row-start: 8;
+        grid-column-start: 1;
+    }
+
+    .checkbox-return-flight{
+        grid-row-start: 9;
+        grid-column-start: 1;
+    }
+
+    .checkbox-two-way-flight{
+        grid-row-start: 10;
+    }
+
+    .form-section button{
+        grid-row-start: 11;
+        grid-column-start: 1;
+    }
+
+    .travel-card-wrapper{
+        display: grid;
+        margin-left: -6rem;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .travel-cartoon{
+        height: 100rem;
+    }
+
+    .travel-cartoon .travel-card-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 30rem;
+        height: 100rem;
+        margin-left: -8rem;
+        
+    }
+    
+    .travel-cartoon .travel-card-wrapper img{
+        width: 100%;
+    }
+   
+    
+    
+    
+    
+
+
+
+    
+   
+    
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}

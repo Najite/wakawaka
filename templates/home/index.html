@@ -1,0 +1,394 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <title>WakaWaka</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-nav">
+        <div class="nav-title">
+          <h1>WakaWaka</h1>
+        </div>
+        <nav>
+          <ul>
+            <li>Login</li>
+            <li>SignUp</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="choice-selection">
+      <nav>
+        <ul>
+          <li>Flights</li>
+          <li>Hotels</li>
+          <li>Car Hire</li>
+        </ul>
+      </nav>
+    </div>
+    <section class="banner-image">
+      <div class="banner-title">
+        <h1>Let's begin your Journey</h1>
+      </div>
+
+      <!-- designing the form in the banner -->
+      <form class="form-section">
+        <div class="one-way-radio">
+          <input type="radio" />
+          <label>One Way</label>
+        </div>
+
+        <div class="multi-city-radio">
+          <input type="radio" />
+          <label>Multi City</label>
+        </div>
+
+        <div class="return-radio">
+          <input type="radio" />
+          <label>Return</label>
+        </div>
+
+        <div class="label-for-to-destination">
+          <label>To</label>
+        </div>
+        <div class="destination" id="destination-to">
+          <input type="text" />
+        </div>
+
+        <div class="label-for-from-destination">
+          <label>From</label>
+        </div>
+        <div class="destination" id="destination-from">
+          <input type="text" />
+        </div>
+
+        <div class="label-for-return-date">
+          <label>Return</label>
+        </div>
+        <div class="destination" id="return-destination">
+          <input type="date" />
+        </div>
+
+        <div class="label-for-depart-destination">
+          <label>Depart</label>
+        </div>
+        <div class="destination" id="date-destination">
+          <input type="date"  />
+        </div>
+
+        <div class="label-for-class-category">
+          <label>Class</label>
+        </div>
+        <div class="destination" id="class-destination">
+          <input type="text" />
+        </div>
+
+        <div class="checkbox-direct-flight">
+          <input type="checkbox">
+          <label>Direct Flight</label>
+
+        </div>
+
+        <div class="checkbox-two-way-flight">
+          <input type="checkbox">
+          <label>Two way Flight</label>
+
+        </div>
+
+        <div class="checkbox-return-flight">
+          <input type="checkbox">
+          <label>Return Flight</label>
+
+        </div>
+
+        <button type="submit">Search Flights</button>
+      </form>
+      <div class="triangle">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" class="shape-fill"></path>
+        </svg>
+    </div>
+    </section>
+
+    <section class="travel-area">
+    <div class="my-container">
+      <div class="announcment">
+        <h2>Affordable Flights around here</h2>
+
+        <a href="">Click here to read more</a>
+      </div>
+
+      <div class="travel-card-wrapper">
+        <div class="travel-card">
+          <img src="{% static 'media/qatar.jpg' %}" alt="">
+          <div class="travel-card-content">
+            <div class="travel-card-title">
+            <h2>Qatar</h2>
+            </div>
+            <div class="travel-card-body">
+              <div class="logo">
+                <img src="{% static 'media/qatar.jpg' %}" alt="">
+              </div>
+              <div class="travel-card-text">
+                <h3>Sunday</h3>
+                <p>Nigeria to Qatar</p>
+              </div>
+
+              <div class="logo">
+                <img src="{% static 'media/qatar.jpg' %}" alt="">
+              </div>
+              <div class="travel-card-text">
+                <h3>Sunday</h3>
+                <p>Nigeria to Qatar</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="travel-card">
+          <img src="{% static 'media/lagos-hotel.jpg' %}" alt="">
+          <div class="travel-card-content">
+            <div class="travel-card-title">
+            <h2>Qatar</h2>
+            </div>
+            <div class="travel-card-body">
+              <div class="logo">
+                <img src="{% static 'media/dubai.jpg' %}" alt="">
+              </div>
+              <div class="travel-card-text">
+                <h3>Sunday</h3>
+                <p>Nigeria to Qatar</p>
+              </div>
+
+              <div class="logo">
+                <img src="{% static 'media/intercontinental-lagos.jpg' %}" alt="">
+              </div>
+              <div class="travel-card-text">
+                <h3>Sunday</h3>
+                <p>Nigeria to Qatar</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="travel-card">
+          <img src="{% static 'media/dubai.jpg' %}" alt="">
+          <div class="travel-card-content">
+            <div class="travel-card-title">
+            <h2>Qatar</h2>
+            </div>
+            <div class="travel-card-body">
+              <div class="logo">
+                <img src="{% static 'media/qatar.jpg' %}" alt="">
+              </div>
+              <div class="travel-card-text">
+                <h3>Sunday</h3>
+                <p>Nigeria to Qatar</p>
+              </div>
+
+              <div class="logo">
+                <img src="{% static 'media/qatar.jpg' %}" alt="">
+              </div>
+              <div class="travel-card-text">
+                <h3>Sunday</h3>
+                <p>Nigeria to Qatar</p>
+              </div>
+            </div>
+          </div>
+
+        </div>    
+      </div>
+
+      <!-- hotels booking -->
+
+      <div class="hotel-booking">
+        <h2>Hotels</h2>
+
+        <nav>
+          <ul>
+            <li>Lagos</li>
+            <li>Bennin City</li>
+            <li>Doha</li>
+            <li>Lisbon</li>
+          </ul>
+        </nav>
+          
+        <div class="travel-card-wrapper">
+          <div class="travel-card">
+            <img src="{% static 'media/qatar.jpg' %}" alt="">
+            <div class="travel-card-content">
+              <div class="travel-card-title">
+              <h2>Qatar</h2>
+              </div>
+              <div class="travel-card-body">
+                <div class="logo">
+                  <img src="{% static 'media/qatar.jpg' %}" alt="">
+                </div>
+                <div class="travel-card-text">
+                  <h3>Sunday</h3>
+                  <p>Nigeria to Qatar</p>
+                </div>
+  
+                <div class="logo">
+                  <img src="{% static 'media/qatar.jpg' %}" alt="">
+                </div>
+                <div class="travel-card-text">
+                  <h3>Sunday</h3>
+                  <p>Nigeria to Qatar</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="travel-card">
+            <img src="{% static 'media/lagos-hotel.jpg' %}" alt="">
+            <div class="travel-card-content">
+              <div class="travel-card-title">
+              <h2>Qatar</h2>
+              </div>
+              <div class="travel-card-body">
+                <div class="logo">
+                  <img src="{% static 'media/dubai.jpg' %}" alt="">
+                </div>
+                <div class="travel-card-text">
+                  <h3>Sunday</h3>
+                  <p>Nigeria to Qatar</p>
+                </div>
+  
+                <div class="logo">
+                  <img src="{% static 'media/intercontinental-lagos.jpg' %}" alt="">
+                </div>
+                <div class="travel-card-text">
+                  <h3>Sunday</h3>
+                  <p>Nigeria to Qatar</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="travel-card">
+            <img src="{% static 'media/dubai.jpg' %}" alt="">
+            <div class="travel-card-content">
+              <div class="travel-card-title">
+              <h2>Qatar</h2>
+              </div>
+              <div class="travel-card-body">
+                <div class="logo">
+                  <img src="{% static 'media/qatar.jpg' %}" alt="">
+                </div>
+                <div class="travel-card-text">
+                  <h3>Sunday</h3>
+                  <p>Nigeria to Qatar</p>
+                </div>
+  
+                <div class="logo">
+                  <img src="{% static 'media/qatar.jpg' %}" alt="">
+                </div>
+                <div class="travel-card-text">
+                  <h3>Sunday</h3>
+                  <p>Nigeria to Qatar</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>    
+        </div>
+  
+      </div>
+      
+    </div>
+
+    <!-- cartoon section -->
+
+    <div class="travel-cartoon">
+      <div class="my-container">
+      <div class="travel-card-wrapper">
+        <div class="travel-card">
+          <img src="{% static 'media/Work-from-home.png' %}" alt="">
+          <div class="travel-card-content">
+            <div class="travel-card-title">
+            <h2>Relax while you work</h2>
+            </div>
+            <div class="travel-card-body">
+              <div class="travel-card-text">
+                <h3>Sunday</h3>
+                <p>Nigeria to Qatar</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="travel-card">
+          <img src="{% static 'media/Work-from-home.png' %}" alt="">
+          <div class="travel-card-content">
+            <div class="travel-card-title">
+            <h2>Relax while you work</h2>
+            </div>
+            <div class="travel-card-body">
+              <div class="travel-card-text">
+                <h3>Sunday</h3>
+                <p>Nigeria to Qatar</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="travel-card">
+          <img src="{% static 'media/Work-from-home.png' %}" alt="">
+          <div class="travel-card-content">
+            <div class="travel-card-title">
+            <h2>Relax while you work</h2>
+            </div>
+            <div class="travel-card-body">
+              <div class="travel-card-text">
+                <h3>Sunday</h3>
+                <p>Nigeria to Qatar</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="travel-card">
+          <img src="{% static 'media/Relax-On-Chair.png' %}" alt="">
+          <div class="travel-card-content">
+            <div class="travel-card-title">
+            <h2>Comfortable Rooms</h2>
+            </div>
+            <div class="travel-card-body">
+              
+              <div class="travel-card-text">
+                <h3>Sunday</h3>
+                <p>Nigeria to Qatar</p>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+      
+    </div>
+
+    </section>
+  </body>
+</html>
